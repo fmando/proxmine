@@ -183,7 +183,7 @@ EOF
 
 # === 7. Build ===
 log "Baue Proxy..."
-/usr/local/go/bin/go build -o $BINARY_PATH xcb-proxy.go
+go build -o $BINARY_PATH xcb-proxy.go
 
 # === 8. Alte systemd Unit prüfen ===
 if [ -f "$SERVICE_PATH" ]; then
