@@ -33,11 +33,11 @@ cd "$WORKDIR"
 
 # Proxy deployen
 echo "🔌 Starte Proxy-Deployment..."
-./deploy-xcb-proxy.sh
+bash -i ./deploy-xcb-proxy.sh
 
 # Coreminer deployen
 echo "⛏  Starte Coreminer-Deployment..."
-./deploy-coreminer.sh
+bash -i ./deploy-coreminer.sh
 
 # Uninstall-Skript nur bereitlegen
 echo "🧹 Uninstall-Skript verfügbar unter: ${WORKDIR}/uninstall-xcb-proxy.sh"
